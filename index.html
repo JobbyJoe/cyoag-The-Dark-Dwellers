@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang = "en-UK">
+
+<head>
+	<title>The Dark Dwellers</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="Favicon/favicon.ico" type="image/x-icon"/>
+	<meta charset="UTF-8">
+	<meta name="description" content="Our brave hero wakes up in a sewer. How did they get here?">
+	<meta name="keywords" content="Horror">
+	<meta name="author" content="Joe Lowdon">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<header id="title" style="color: white">
+	<h1>The Dark Dwellers</h1>
+</header>
+
+<div id="mode">
+	<script>
+		// Function to change the background colour to white when clicking the image
+		function changeBackgroundColour(color)
+		{
+			document.body.style.background = color;
+		}
+		
+		// Function to change the heading font colour to black when clicking the image
+		function changeHeadingColour(color)
+		{
+			document.getElementById("title").style.color = color;
+		}
+	</script>
+	<input id="day" type="image" onclick="changeBackgroundColour('white');changeHeadingColour('black');"
+	src="Images/circle-sun.png" alt="day mode">
+	<input id="night" type="image" onclick="changeBackgroundColour('black');changeHeadingColour('white');"
+	src="Images/circle-moon.png" alt="night mode">
+</div>
+
+<div id="game" style="background-color: black">
+	<!-- <img src="Images/dark.jpg" alt="Lights Off Image"> -->
+	<img src="Images/light.jpg" alt="Lights On Image">
+</div>
+
+<div id="game-text">
+	<p><b>YOU AWAKE IN COMPLETE DARKNESS. WITHOUT KNOWING WHERE YOU ARE AND HOW YOU'VE ENDED UP HERE.
+	DUE TO SOME APPARENT AMNESIA. YOU TRY TO GET A PICTURE OF YOUR SURROUNDINGS BY PEERING INTO THE DARKNESS.
+	YOU CAN SEE A FAINT PAIR OF RED GLOWING EYES. YOU USE YOUR LIGHTER TO SEE BETTER..</b></p>
+</div>
+
+<div id="input">
+	<input id="user-input" style="font-size:42pt;width:933px;" placeholder="Awaiting text...">
+	<script>
+	// https://stackoverflow.com/questions/7303948/how-to-auto-scroll-to-end-of-div-when-data-is-added
+		window.setInterval(function() {
+  			var elem = document.getElementById('game-text');
+  			elem.scrollTop = elem.scrollHeight;
+		}, 3000);
+	</script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="rooms.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</div>
+
+<div>
+	<script>
+		function play() {
+			var audio = document.getElementById("audio");
+			audio.play()
+		}
+		function pause() {
+			var audio = document.getElementById("audio");
+			audio.pause()
+		}	
+	</script>
+	<input id="pause" onclick="play()" type="image" value="PLAY" src="Images/pause.jpg" alt="pause">
+	<input id="play" onclick="pause()" type="image" src="Images/play.jpg" alt="play">
+	<audio id="audio" src="Audio/Ritual.wav" type="audio/wav" loop></audio>
+</div>
+</body>
+
+</html>
