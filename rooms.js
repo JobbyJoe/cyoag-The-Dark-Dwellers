@@ -142,7 +142,7 @@ let rooms = {
 	//room6
 	"passage": {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 		"description":
-		"WALKING THROUGH YOU HEAR A LARGE RUMBLE AS YOU NOTICE THE PILLARS HOLDING UP THE PASSAGE ARE STARTING TO FALL APART.\
+		"<b>WALKING THROUGH YOU HEAR A LARGE RUMBLE AS YOU NOTICE THE PILLARS HOLDING UP THE PASSAGE ARE STARTING TO FALL APART.\
 		YOU QUICKLY LEAP TO SAFETY ALMOST BEING SQUASHED BY THE FALLING DEBRIS. UNFORTUNATELY WHEN YOU LAND YOU SUFFER A\
 		CONCUSSION. AS YOU LAY ON THE FLOOR YOU HEAR SOMEONE CALLING OUT TO YOU. LOOK UP AND SEE A GROUP OF PEOPLE COMING\
 		TOWARDS YOU EACH HOLDING ASSAULT RIFLES. THEY DRAG YOU AWAY...TO BE CONTINUED... WOULD YOU LIKE TO PLAY AGAIN? Y/N </b>"
